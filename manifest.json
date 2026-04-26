@@ -1,18 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Gemini Canvas Downloader",
-  "version": "3.0.0",
-  "description": "GeminiのCanvasで開いているファイルをワンクリックで上書き保存・ダウンロードします。",
-  "permissions": [
-    "activeTab",
-    "scripting",
-    "downloads",
-    "clipboardRead",
-    "clipboardWrite"
-  ],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "name": "Gemini Canvas Markdown to Clipboard",
+  "version": "1.0.0",
+  "description": "GeminiのCanvasで開いているファイルをワンクリックで Markdown 形式としてクリップボードにコピーします。",
+  "permissions": ["activeTab", "scripting", "clipboardRead", "clipboardWrite"],
   "content_scripts": [
     {
       "matches": ["https://gemini.google.com/*"],
